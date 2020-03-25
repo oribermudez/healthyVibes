@@ -1,0 +1,89 @@
+#blog {
+  grid-area: blog;
+  display: grid;    
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(70px, auto);
+  grid-template-areas: 
+  "article";
+  grid-gap: 20px;
+  padding: 5%;
+}
+
+#blog img {
+  width: 100%;
+}
+
+.article {
+  text-align: center;
+  padding: 5%;
+  box-shadow: 0px 0px 6px -2px rgba(194,194,194,1);
+}
+
+.article > p {
+  padding: 5%;
+  color: rgb(146, 144, 144);
+  margin: 0 0 5% 0;
+}
+
+.recipeMark {
+  width: 10px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffaa8e;
+  margin-right: 6%;
+}
+
+.recipeColor {
+  color: #ffaa8e;
+  font-size: 0.8rem;
+}
+
+.workoutMark {
+  width: 10px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #34dce5;
+  margin-right: 6%;
+}
+
+.workourColor {
+  color: #34dce5;
+  font-size: 0.8rem;
+}
+
+.date {
+  color: rgb(146, 144, 144);
+  font-size: 0.8rem;
+}
+
+.topicMargin {
+  margin-top: 15%;
+}
+
+.readMoreBtn {
+  font-size: 0.8rem;
+  width: 90vw;
+  background-color: #ffaa8e;
+  border-radius: 3%;
+  color: #fff;
+  padding: 5%;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) and (max-width:900px) {
+  .article {
+    padding: 10%;
+  }
+}
+
+@media (min-width:901px) {
+
+  #blog {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "article article";
+  }
+
+  .article {
+    padding: 10%;
+  }
+}

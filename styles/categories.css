@@ -1,0 +1,61 @@
+#categories {
+  text-align: center;
+  padding: 10% 10% 4% 10%;
+  margin: 3%;
+}
+
+.around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipes {
+  color: #ffaa8e;
+  border-radius: 5px;
+  padding: 3%;
+  margin: 7%;
+}
+
+.workouts {
+  color: #34dce5;
+  border-radius: 5px;
+  padding: 3%;
+  margin: 7%;
+}
+
+.workoutCircle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #34dce5;
+  margin-bottom: 15%;
+}
+
+.workoutCircle img {
+  width: 55px !important;
+}
+
+.recipeCircle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ffaa8e;
+  margin-bottom: 15%;
+}
+
+.recipeCircle img {
+  width: 45px !important;
+}
+
+@media (min-width: 600px) and (max-width:900px) {
+  .around {
+    flex-direction: column;
+  }
+}
